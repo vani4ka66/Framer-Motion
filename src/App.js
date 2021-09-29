@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="App">
-      <form>
+      <motion.form initial={false} animate={{ x: 0, translateX: 500 }}>
         <h1>Create An Account</h1>
         <label>
           Email:
@@ -16,7 +16,7 @@ function App() {
           <input name="password" type="password" required />
         </label>
         <button>Sign Up!</button>
-      </form>
+      </motion.form>
     </div>
   );
 }
