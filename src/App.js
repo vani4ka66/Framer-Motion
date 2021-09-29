@@ -1,9 +1,13 @@
 import "./App.css";
+import { motion } from "framer-motion"
 
 function App() {
+
+  // const item = {opacity: 0}
+
   return (
     <div className="App">
-      <form>
+      <motion.form variants={item} animate={{ x: 100 }}>
         <h1>Create An Account</h1>
         <label>
           Email:
@@ -14,9 +18,11 @@ function App() {
           <input name="password" type="password" required />
         </label>
         <button>Sign Up!</button>
-      </form>
+      </motion.form>
     </div>
   );
 }
 
 export default App;
+
+
